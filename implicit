@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+int Score = 500;
+int maxScore = 423;
+float percentage = Score / maxScore * 100.0;
+printf("User's percentage is %.2f", percentage);
+}
