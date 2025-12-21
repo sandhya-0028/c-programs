@@ -2,7 +2,7 @@
 int main() {
     double principal, rate, time;
     int n; 
-    double amount,compoundInterest;
+    double amount=1.0,compoundInterest;
     printf("Enter principal amount: ");
     scanf("%lf", &principal);
     printf("Enter annual interest rate (in %%): ");
@@ -11,8 +11,6 @@ int main() {
     scanf("%lf", &time);
     printf("Enter number of times interest is compounded per year: ");
     scanf("%d", &n);
-    printf("enter the  amount:");
-    scanf("%lf",&amount);
     int totalPeriods = n * time;
     double factor = 1 + (rate / 100) / n;
     for (int i = 0; i < totalPeriods; i++)
