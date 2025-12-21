@@ -1,0 +1,17 @@
+#include <stdio.h>
+void factorial_iteration(int N)
+{
+    unsigned long long int value = 1;
+    for (int i = 1; i <= N; i++) {
+        value = value * i;
+    }
+    printf("Factorial of %d is %lld\n", N, value);
+}
+int main()
+{
+    int n;
+    printf("enter the value of n:");
+    scanf("%d",&n);
+    factorial_iteration(n);
+    return 0;
+}
